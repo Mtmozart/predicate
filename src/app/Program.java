@@ -17,8 +17,8 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		//metodo de referência
 		//list.removeIf(Product::noStaticProductPredicate);
-		Predicate<Product> pred = p -> p.getPrice() >=100.00;
-		list.removeIf(pred);
+		//Predicate<Product> pred = p -> p.getPrice() >=100.00;
+		list.removeIf( p -> p.getPrice() >=100.00);
 
 		for (Product p : list) {
 			System.out.println(p);
